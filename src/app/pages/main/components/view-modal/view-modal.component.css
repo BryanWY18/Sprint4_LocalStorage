@@ -1,0 +1,9 @@
+.img-container img{
+    width: 450px;
+    object-fit: cover;
+}
+
+.view-form{
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+
+}

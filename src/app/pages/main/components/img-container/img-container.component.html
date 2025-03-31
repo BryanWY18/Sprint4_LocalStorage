@@ -1,0 +1,19 @@
+@if(images.length==0){
+  <p>"No hay imágenes agregadas"</p>
+}@else{
+  <div class="d-flex flex-wrap main-container">
+    @for(i of images; track i){
+      <div class="card card-container" style="width: 18rem;">
+          <img [src]="i.src" class="card-img-top" alt="...">
+          <div class="card-body container">
+            <h5 class="card-title">{{i.name}}</h5>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#active" (click)="onShow(i)">Ver</button>
+            <button type="button" class="btn btn-danger" (click)="deleteImage(i.id_image)">Eliminar</button>
+          </div>
+      </div>
+    }
+  </div>
+}
+@if(show){
+  <app-view-modal [images]="imageSelected.src" [id_check]="active"></app-view-modal>
+}

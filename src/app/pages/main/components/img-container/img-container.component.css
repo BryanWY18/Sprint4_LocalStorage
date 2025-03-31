@@ -1,0 +1,29 @@
+.container{
+    text-align: center;
+}
+
+.container button{
+    margin: 0 10px;
+}
+
+.card-container{
+    margin: 10px 7px;
+    box-shadow: -5px 5px 8px rgba(7, 9, 10, 0.5);
+}
+
+.card-container:hover{
+    box-shadow: -5px 5px 8px rgba(34, 121, 165, 0.5);
+    transform: translate(0px, -15px);
+    transition: all 0.3s ease-in-out;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.main-container{
+    margin-bottom: 20px;
+}

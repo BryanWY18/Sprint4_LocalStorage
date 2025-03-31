@@ -1,0 +1,3 @@
+<app-add-button [modalID]="newImageModalID"></app-add-button>
+<app-img-container [images]="imgArray" (reloadImgs)="ngOnInit()" ></app-img-container>
+<app-newimage-form [modalID]="newImageModalID" (reloadImgs)="ngOnInit()" ></app-newimage-form>
